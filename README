@@ -1,0 +1,8 @@
+xosd is a simple ffi wrapper around xosd.
+
+If you have errors you should require my xosd-ffi-patch (see the example).
+
+License MIT
+
+TODO:
+-gemspec
