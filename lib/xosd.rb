@@ -97,6 +97,16 @@ module X11
       @shadow_offset=offset
     end
 
+    def outline_color=(color)
+      call_and_raise(:xosd_set_outline_colour,@xosd,color)
+      @outline_color=color
+    end
+
+    def outline_offset=(offset)
+      call_and_raise(:xosd_set_outline_offset,@xosd,offset)
+      @outline_offset=offset
+    end
+
     def voffset=(offset)
       call_and_raise(:xosd_set_vertical_offset,@xosd,offset)
       @voffset=offset
